@@ -1,13 +1,12 @@
 from fastapi import APIRouter, Depends, status, Path, HTTPException
 from starlette import status
 from sqlalchemy.orm import Session
-from models import Todos 
-import models
-from database import engine , SessionLocal
+from ..models import Todos 
+from ..database import engine , SessionLocal
 from typing import Annotated
 from pydantic import BaseModel,Field
-from routers import auth
-from .auth import Users, get_current_user
+from ..routers import auth
+from .auth import  get_current_user
 
 
 router = APIRouter(

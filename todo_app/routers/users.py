@@ -1,11 +1,11 @@
 from fastapi import APIRouter, Depends, status, Path, HTTPException
 from starlette import status
 from sqlalchemy.orm import Session
-from models import Todos , Users
-from database import engine , SessionLocal
+from ..models import Todos , Users
+from ..database import engine , SessionLocal
 from typing import Annotated
 from pydantic import BaseModel,Field
-from routers import auth
+from ..routers import auth
 from .auth import Users, get_current_user
 from passlib.context import CryptContext
 
@@ -69,8 +69,6 @@ async def change_phone_number(user: user_dependency, db: db_dependency,
         raise HTTPException(status_code=400, detail='Current phone number does not match')
 
     user_model.phone_number = update_phone_number.new_phone_number
-    
-    
     
     db.add(user_model)
     db.commit()    
