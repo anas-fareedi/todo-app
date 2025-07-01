@@ -62,5 +62,5 @@ uvicorn==0.34.0
 virtualenv==20.2.2
 watchfiles==0.18.1
 watchgod==0.8.2
-websockets==8.1
+websockets==10.4
 wrapt==1.12.1
