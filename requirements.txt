@@ -18,7 +18,7 @@ fastapi==0.78.0
 filelock==3.0.12
 greenlet==1.1.2
 h11==0.13.0
-httptools==0.5.0
+httptools==0.4.0
 idna==3.3
 iniconfig==1.1.1
 isort==5.7.0
@@ -29,7 +29,7 @@ Mako==1.2.0
 MarkupSafe==2.1.0
 mccabe==0.6.1
 mysql-connector-python==8.0.27
-orjson==3.6.8
+orjson==3.9.10
 packaging==21.3
 passlib==1.7.4
 Pillow==8.2.0
@@ -60,7 +60,7 @@ typing_extensions==4.1.1
 ujson==5.3.0
 urllib3==1.26.14
 uvicorn==0.34.0
-uvloop==0.17.0
+uvloop==0.16.0
 virtualenv==20.2.2
 watchfiles==0.18.1
 watchgod==0.8.2
