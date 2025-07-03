@@ -15,6 +15,7 @@ idna          ==    3.10
 Jinja2         ==   3.1.6
 MarkupSafe      ==  3.0.2
 passlib          == 1.7.4
+psycopg2-binary==2.9.9
 pip               ==25.1.1
 pyasn1           == 0.6.1
 pycparser   ==      2.22
